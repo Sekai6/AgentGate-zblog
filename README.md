@@ -77,6 +77,15 @@ Fixed positioning breaks under certain theme stacking contexts — the overlay e
 
 ---
 
+## Ecosystem
+
+| Repo | Description |
+|---|---|
+| [AgentGate-captcha](https://github.com/Artistkisa/AgentGate-captcha) | Core verification service (Flask + MCP) |
+| [AgentGate-zblog](https://github.com/Sekai6/AgentGate-zblog) | ZBlog plugin |
+| [AgentGate-wordpress](https://github.com/Sekai6/AgentGate-wordpress) | WordPress plugin |
+
+
 ## License
 
 MIT
@@ -115,3 +124,12 @@ MIT
 - ZBlog PHP >= 1.7.0
 - PHP >= 5.3
 - AgentGate 验证服务（自建或使用公开 Demo）
+
+## 生态
+
+| 仓库 | 说明 |
+|---|---|
+| [AgentGate-captcha](https://github.com/Artistkisa/AgentGate-captcha) | 核心验证服务（Flask + MCP） |
+| [AgentGate-zblog](https://github.com/Sekai6/AgentGate-zblog) | ZBlog 插件 |
+| [AgentGate-wordpress](https://github.com/Sekai6/AgentGate-wordpress) | WordPress 插件 |
+
