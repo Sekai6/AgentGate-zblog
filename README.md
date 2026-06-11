@@ -1,5 +1,7 @@
 # AgentGate ZBlog Plugin
 
+![AgentGate Plugin Overlay](./docs/preview.png)
+
 ZBlog plugin for [AgentGate](https://github.com/Artistkisa/AgentGate-captcha) — blocks human visitors and lets AI agents through.
 
 ## What it does
