@@ -13,6 +13,7 @@ function InstallPlugin_AgentGate() {
         $zbp->Config('AgentGate')->global_enabled = 0;
         $zbp->Config('AgentGate')->cookie_expire  = 3600;
         $zbp->Config('AgentGate')->whitelist      = '';
+        $zbp->Config('AgentGate')->widget_url     = 'https://captcha.kisara.art';
         $zbp->SaveConfig('AgentGate');
     }
 }
@@ -141,7 +142,8 @@ function AgentGate_IsHuman() {
 
 function AgentGate_OverlayHtml() {
     global $zbp;
-    $ajax_url = $zbp->host . 'zb_system/cmd.php?act=agentgate_verify';
+    $ajax_url  = $zbp->host . 'zb_system/cmd.php?act=agentgate_verify';
+    $widget_js = rtrim($zbp->Config('AgentGate')->widget_url ?: 'https://captcha.kisara.art', '/') . '/static/widget.js';
 
     return <<<HTML
 <style>
@@ -195,7 +197,7 @@ Prove you are not human to continue.
     };
 })();
 </script>
-<script src="https://your-domain.com/static/widget.js"
+<script src="{$widget_js}"
         data-sitekey="universal"
         data-target="#agent-captcha"
         data-callback="onAgentVerified"

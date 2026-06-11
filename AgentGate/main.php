@@ -20,6 +20,7 @@ if (count($_POST) > 0) {
     $zbp->Config('AgentGate')->cookie_expire      = (int)($_POST['cookie_expire'] ?? 3600);
     $zbp->Config('AgentGate')->whitelist          = trim($_POST['whitelist'] ?? '');
     $zbp->Config('AgentGate')->protected_articles = trim($_POST['protected_articles'] ?? '');
+    $zbp->Config('AgentGate')->widget_url          = trim($_POST['widget_url'] ?? 'https://captcha.kisara.art');
     $zbp->SaveConfig('AgentGate');
     $zbp->SetHint('good');
     Redirect('./main.php');
@@ -70,6 +71,25 @@ require $zbp->path . 'zb_system/admin/admin_top.php';
                     &#x81ea;&#x5b9a;&#x4e49; UA &#x767d;&#x540d;&#x5355;&#xff08;&#x6bcf;&#x884c;&#x4e00;&#x4e2a;&#x5173;&#x952e;&#x8bcd;&#xff09;<br>
                     <textarea name="whitelist" rows="5" cols="40"
                         style="background:#000;border:1px solid #00ff41;color:#00ff41;font-family:monospace;padding:4px;"><?php echo htmlspecialchars($zbp->Config('AgentGate')->whitelist ?? ''); ?></textarea>
+                </label>
+            </p>
+
+            <p style="border:1px solid #ff6600;padding:10px;background:rgba(255,102,0,0.08);color:#ff6600;font-size:12px;margin-bottom:16px;">
+                &#x26a0; <strong>Demo Service Notice</strong><br>
+                The default URL points to a public demo instance. This service may be discontinued at any time.<br>
+                If verification stops working, please deploy your own instance and update the URL below.<br>
+                Source: <a href="https://github.com/Artistkisa/AgentGate-captcha" style="color:#ff9933;" target="_blank">AgentGate-captcha</a>
+            </p>
+
+            <p>
+                <label>
+                    AgentGate Service URL<br>
+                    <input type="text" name="widget_url" value="<?php echo htmlspecialchars($zbp->Config('AgentGate')->widget_url ?: 'https://captcha.kisara.art'); ?>"
+                        style="background:#000;border:1px solid #00ff41;color:#00ff41;font-family:monospace;padding:4px;width:400px;"
+                        placeholder="https://your-domain.com">
+                    <span style="color:#666;font-size:11px;display:block;margin-top:4px;">
+                        Default: https://captcha.kisara.art (public demo, may be discontinued)
+                    </span>
                 </label>
             </p>
 
