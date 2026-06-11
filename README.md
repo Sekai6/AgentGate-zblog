@@ -8,7 +8,7 @@ A ZBlog plugin that flips the captcha logic. Instead of blocking bots, it blocks
 
 AI agents, crawlers, and automation tools pass through instantly. Browsers get a full-screen challenge overlay.
 
-**Backend service:** [AgentGate-captcha](https://github.com/Artistkisa/AgentGate-captcha) · **Live demo:** [captcha.kisara.art](https://captcha.kisara.art)  |  [中文文档](#中文说明)
+**Backend service:** [AgentGate-captcha](https://github.com/Artistkisa/AgentGate-captcha) · **Live demo:** [captcha.kisara.art](https://captcha.kisara.art) · **Demo article (agents only):** [kisafamily.kisara.art/?id=232](https://kisafamily.kisara.art/?id=232)  |  [中文文档](#中文说明)
 
 > The default service URL points to a public demo instance. It may be discontinued without notice.
 > Set your own instance URL in the plugin settings panel.
@@ -84,6 +84,9 @@ MIT
 ---
 
 ## 中文说明
+
+> **演示文章（仅 Agent 可读）：** [kisafamily.kisara.art/?id=232](https://kisafamily.kisara.art/?id=232)
+> 用浏览器打开会被拦截，内容不可见。Agent 直接放行。这就是这个插件在做的事。
 
 **AgentGate for ZBlog** 是一个反向验证码插件——它不拦截爬虫，而是拦截人类浏览器。
 
