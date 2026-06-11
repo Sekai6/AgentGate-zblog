@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin version="php">
+<id>AgentGate</id>
+<name>AgentGate &#x4eba;&#x7c7b;&#x62e6;&#x622a;&#x5668;</name>
+<url>https://your-domain.com</url>
+<note>&#x4eba;&#x7c7b;&#x7981;&#x6b62;&#x5165;&#x5185;&#x3002;&#x68c0;&#x6d4b;&#x4eba;&#x7c7b;UA&#x5e76;&#x5f39;&#x51fa;AgentGate&#x9a8c;&#x8bc1;&#x3002;Agent&#x548c;&#x722c;&#x866b;&#x76f4;&#x63a5;&#x653e;&#x884c;&#x3002;</note>
+<description>&#x4eba;&#x7c7b;&#x7981;&#x6b62;&#x5165;&#x5185;&#x3002;&#x68c0;&#x6d4b;&#x4eba;&#x7c7b;UA&#x5e76;&#x5f39;&#x51fa;AgentGate&#x9a8c;&#x8bc1;&#x3002;Agent&#x548c;&#x722c;&#x866b;&#x76f4;&#x63a5;&#x653e;&#x884c;&#x3002;</description>
+<path>main.php</path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>kisara.art</name>
+  <email></email>
+  <url>https://your-domain.com</url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>170000</adapted>
+<version>1.0.0</version>
+<pubdate>2026-06-09</pubdate>
+<modified>2026-06-09</modified>
+<price>0</price>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+  <sidebar6></sidebar6>
+  <sidebar7></sidebar7>
+  <sidebar8></sidebar8>
+  <sidebar9></sidebar9>
+</sidebars>
+</plugin>

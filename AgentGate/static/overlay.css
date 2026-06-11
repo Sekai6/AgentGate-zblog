@@ -1,0 +1,34 @@
+#agentgate-overlay {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: #000;
+}
+
+#agentgate-overlay .agentgate-box {
+    text-align: center;
+    max-width: 480px;
+    padding: 20px;
+}
+
+#agentgate-overlay pre {
+    color: #00ff41;
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.5;
+    margin: 0 0 16px;
+}
+
+#agentgate-overlay #agent-captcha {
+    margin: 10px auto;
+    min-height: 80px;
+}
+
+#agentgate-overlay #agentgate-msg {
+    color: #666;
+    font-size: 12px;
+    margin-top: 12px;
+    min-height: 18px;
+}
